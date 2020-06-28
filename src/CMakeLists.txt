@@ -9,5 +9,6 @@ find_package(Threads REQUIRED)
 add_executable(BinaryGap BinaryGap.cc)
 add_executable(CyclicRotation CyclicRotation.cc)
 add_executable(OddOccurencesInArray OddOccurencesInArray.cc)
+add_executable(FirstNonRepeating FirstNonRepeating.cc)
 
 add_executable(main main.cc)
