@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <unordered_map>
 
 // choosing to be practical...
 #if 1
@@ -39,11 +40,11 @@ int OddOccurencesInArraySlow(vector<int> &A){
 }
 
 int OddOccurencesInArray(vector<int> &A){
-    std::map<int, int> hist;
-    std::map<int, int>::iterator ut;
+    std::unordered_map<int, int> hist;
+    std::unordered_map<int, int>::iterator ut;
 
     for (auto it : A) {
-        std::map<int, int>::iterator ot = hist.find(it);
+        std::unordered_map<int, int>::iterator ot = hist.find(it);
         if (ot != hist.end()) {
             hist[it]++;
         } else {
@@ -70,7 +71,7 @@ int main(int argc, char **argv) {
     arr.push_back(3);
     arr.push_back(4);
     arr.push_back(4);
-    arr.push_back(7);
+    arr.push_back(8);
     arr.push_back(2);
 
     int ans = OddOccurencesInArray(arr);

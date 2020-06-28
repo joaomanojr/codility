@@ -45,10 +45,10 @@ int main(int argc, char **argv) {
         my_vec.push_back(i);
     print_vector(my_vec);
 
-    vector<int> my_vec_r = CiclicRotation(my_vec, 1);
+    vector<int> my_vec_r = CyclicRotation(my_vec, 1);
     print_vector(my_vec_r);
 
-    my_vec_r = CiclicRotation(my_vec, 3);
+    my_vec_r = CyclicRotation(my_vec, 3);
     print_vector(my_vec_r);
 
     cout << "Breakpoint spot!" << endl;
