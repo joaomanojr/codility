@@ -1,5 +1,7 @@
 // https://www.hackerrank.com/challenges/queens-attack-2/problem
 
+// Not a solution yet - must improve performance... :(
+
 #include <bits/stdc++.h>
 #include <unordered_map>
 
