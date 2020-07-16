@@ -17,11 +17,6 @@
 string solution(int U, int L, vector<int> &C) {
     string my_sol_u, my_sol_l;
 
-    // Check for impossible
-    // if (C.size() * 2 > (U + L)) {
-    //     return "IMPOSSIBLE";
-    // }
-
     for (auto it : C)
         switch (it) {
             // 0 and 2 means just fill upper and lower with ones or zeroes
